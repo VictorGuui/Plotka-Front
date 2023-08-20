@@ -42,8 +42,8 @@ export function Home() {
                 ))}
             </div>
             <div className="actions">
-                <input type="text" placeholder="type" className="entry" onChange={(e) => setCurrentMessage(e.target.value)}/>
-                <button className="send" onClick={() => handleMessage(currentMessage)}>enviar</button>
+                <input type="text" placeholder="Digite" className="entry" onChange={(e) => setCurrentMessage(e.target.value)}/>
+                <button className="send" onClick={() => handleMessage(currentMessage)}>Enviar</button>
             </div>
         </div>
     )
