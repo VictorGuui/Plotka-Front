@@ -33,6 +33,10 @@ export function Home() {
 
     return (
         <div className="main">
+            <header>
+                <h1>Bem vindo ao chat de vocação</h1>
+                <h3>experimente conversar para descubrir a sua vocação</h3>
+            </header>
             <div className="contents">
                 {messages.map((message, index) => (
                     <div key={index} className={message.role}>
@@ -41,8 +45,8 @@ export function Home() {
                 ))}
             </div>
             <div className="actions">
-                <input type="text" placeholder="type" className="entry" onChange={(e) => setCurrentMessage(e.target.value)}/>
-                <button className="send" onClick={() => handleMessage(currentMessage)}>enviar</button>
+                <input type="text" placeholder="Digite" className="entry" onChange={(e) => setCurrentMessage(e.target.value)}/>
+                <button className="send" onClick={() => handleMessage(currentMessage)}>Enviar</button>
             </div>
         </div>
     )

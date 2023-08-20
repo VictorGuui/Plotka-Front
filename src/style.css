@@ -2,11 +2,19 @@
 .main {
     display: flex;   
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+
+header{
+    text-align: center;
+    background-color: aquamarine ;
     width: 100vw;
-    min-height: 100vh;
-    background-color: #555;
+    height: 50%;
+    margin-bottom: 2%;
+    padding: 12px;
+}
+header h1{
+    font-weight: 800;
 }
 
 .contents {
@@ -18,41 +26,66 @@
     flex-direction: column;
     background-color: white;
     justify-content: end;
-    width: 70%;
-    height: 700px;
+    align-items: end;
+    align-content: space-between;
+    width: 40%;
+    height: 600px;
     scroll-behavior: smooth;
     overflow-y: scroll;
+    background-color:rgb(228, 228, 228) ;
 }
 
 .actions {
     display: flex;
     background-color: white;
     border: 1px solid black;
-    padding: 8px;
+    padding: 4px;
     gap: 5px;
-    width: 70%;
-    border-radius: 5px;
+    width: 40%;
+    border-radius: 2px;
+    outline: none;
+}
+.actions:focus{
+    border: none;
+    outline: none;
 }
 
 .entry {
     width: 70%;
+    border: none;
+
+}
+
+.entry:focus{
+    border: none;
+    outline: none;
+    
 }
 
 .send {
     width: 30%;
+    border-left: 1px solid black;
+}
+.send:hover{
+    background-color: rgb(143, 211, 143);
+    transition: 1s;
 }
 
 .user {
-    width: 100%;
-    text-align: right;
+    width: 20%;
+    text-align: center;
     height: 50px;
-    border-top: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.4);
     padding: 8px;
+    border-radius: 8px;
+    background-color: aquamarine;
 }
 
 .assistant {
-    width: 100%;    
-    border-top: 1px solid rgba(0,0,0,0.1);
+    width: 20%;    
+    border-top: 1px solid rgba(0,0,0,0.4);
     padding: 8px;
+    background-color: azure;
+
 
 }
