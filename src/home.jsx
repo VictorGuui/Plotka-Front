@@ -20,7 +20,6 @@ export function Home() {
         services.sendMessage([...messages, newMessage])
         .then((response) => {
             if (response.data.finish) {
-                alert(response.data);
             } else {
                 const messageAssistant = response.data;
                 setMessages(prev => ([...prev, {role: 'assistant', content: messageAssistant}]))
