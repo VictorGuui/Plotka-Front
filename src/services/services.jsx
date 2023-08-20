@@ -2,7 +2,8 @@ import axios from "axios";
 
 class Services {
     async sendMessage(message) {
-        return await axios.post('https://localhost:5000/send-message', message, {
+        console.log(message)
+        return await axios.post('http://localhost:5000/send-message', message, {
             headers: {
                 'Accept': 'application/json',
             },

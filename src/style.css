@@ -20,6 +20,8 @@
     justify-content: end;
     width: 70%;
     height: 700px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 .actions {
@@ -49,8 +51,8 @@
 }
 
 .assistant {
-    width: 100%;
-    height: 50px;
+    width: 100%;    
     border-top: 1px solid rgba(0,0,0,0.1);
     padding: 8px;
+
 }
