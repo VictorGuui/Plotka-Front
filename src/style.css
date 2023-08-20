@@ -2,11 +2,19 @@
 .main {
     display: flex;   
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+
+header{
+    text-align: center;
+    background-color: aquamarine ;
     width: 100vw;
-    min-height: 100vh;
-    background-color: rgb(123, 123, 123);
+    height: 50%;
+    margin-bottom: 2%;
+    padding: 12px;
+}
+header h1{
+    font-weight: 800;
 }
 
 .contents {
@@ -20,8 +28,8 @@
     justify-content: end;
     align-items: end;
     align-content: space-between;
-    width: 70%;
-    height: 700px;
+    width: 40%;
+    height: 600px;
     scroll-behavior: smooth;
     overflow-y: scroll;
     background-color:rgb(228, 228, 228) ;
@@ -33,7 +41,7 @@
     border: 1px solid black;
     padding: 4px;
     gap: 5px;
-    width: 70%;
+    width: 40%;
     border-radius: 2px;
     outline: none;
 }
@@ -67,15 +75,15 @@
     width: 20%;
     text-align: center;
     height: 50px;
-    border-top: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.4);
     padding: 8px;
     border-radius: 8px;
     background-color: aquamarine;
 }
 
 .assistant {
-    width: 100%;    
-    border-top: 1px solid rgba(0,0,0,0.1);
+    width: 20%;    
+    border-top: 1px solid rgba(0,0,0,0.4);
     padding: 8px;
     background-color: azure;
 
