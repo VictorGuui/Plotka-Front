@@ -1,0 +1,56 @@
+
+.main {
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #555;
+}
+
+.contents {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: end;
+    width: 70%;
+    height: 700px;
+}
+
+.actions {
+    display: flex;
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px;
+    gap: 5px;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.entry {
+    width: 70%;
+}
+
+.send {
+    width: 30%;
+}
+
+.user {
+    width: 100%;
+    text-align: right;
+    height: 50px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 8px;
+}
+
+.assistant {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 8px;
+}
